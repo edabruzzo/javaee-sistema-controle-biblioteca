@@ -20,8 +20,33 @@ public class Autor {
     @Column(name="nome", nullable = false)
     private String nome;
 
+    @ManyToMany
     private List<Livro> livrosPublicados;
 
 
+    public String getNome() {
+        return nome;
+    }
 
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public List<Livro> getLivrosPublicados() {
+        return livrosPublicados;
+    }
+
+    public void setLivrosPublicados(List<Livro> livrosPublicados) {
+        this.livrosPublicados = livrosPublicados;
+    }
+
+
+    @java.lang.Override
+    public java.lang.String toString() {
+        return "Autor{" +
+                "uuid=" + uuid +
+                ", nome='" + nome + '\'' +
+                ", livrosPublicados=" + livrosPublicados +
+                '}';
+    }
 }

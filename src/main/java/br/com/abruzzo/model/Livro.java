@@ -43,5 +43,46 @@ public class Livro {
     private List<Autor> autores;
 
 
+    public Long getISBN() {
+        return ISBN;
+    }
 
+    public void setISBN(Long ISBN) {
+        this.ISBN = ISBN;
+    }
+
+    public String getNomeLivro() {
+        return nomeLivro;
+    }
+
+    public void setNomeLivro(String nomeLivro) {
+        this.nomeLivro = nomeLivro;
+    }
+
+    public LocalDate getDataPublicao() {
+        return dataPublicao;
+    }
+
+    public void setDataPublicao(LocalDate dataPublicao) {
+        this.dataPublicao = dataPublicao;
+    }
+
+    public List<Autor> getAutores() {
+        return autores;
+    }
+
+    public void setAutores(List<Autor> autores) {
+        this.autores = autores;
+    }
+
+
+    @java.lang.Override
+    public java.lang.String toString() {
+        return "Livro{" +
+                "ISBN=" + ISBN +
+                ", nomeLivro='" + nomeLivro + '\'' +
+                ", dataPublicao=" + dataPublicao +
+                ", autores=" + autores +
+                '}';
+    }
 }
