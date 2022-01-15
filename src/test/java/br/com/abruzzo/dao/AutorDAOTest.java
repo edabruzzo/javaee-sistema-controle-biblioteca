@@ -8,7 +8,10 @@ import br.com.abruzzo.model.Autor;
  */
 class AutorDAOTest {
 
-
+    /**
+     * TODO injetar o AutorDAO ou o persistence Context
+     * Ou mockar AutorDAO
+     */
     public AutorDAO autorDAO;
 
 
