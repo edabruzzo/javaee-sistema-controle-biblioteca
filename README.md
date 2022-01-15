@@ -19,7 +19,6 @@
 
 Executar o comando a seguir na raiz do projeto
 ```shell
-
 mkdir postgres-data && docker run --name javaee-sistema-controle-biblioteca -v $(pwd)/postgres-data:/var/lib/postgresql/data -d -p 5432:5432 -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=javaee-sistema-controle-biblioteca postgres:latest
 
 ```
